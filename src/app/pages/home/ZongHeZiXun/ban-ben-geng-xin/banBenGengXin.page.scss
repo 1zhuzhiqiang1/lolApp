@@ -1,0 +1,31 @@
+.news-cover {
+	float: left;
+	height: 80px;
+	width: 100px;
+}
+
+.news-time{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 16px;
+	color: black;
+}
+
+.news-title {
+	position: relative;
+	height: 80px;
+	padding-left: .42667rem;
+	font-size: .68267rem;
+	line-height: 1.4;
+	word-break: break-all;
+	overflow: hidden;
+	span{
+		word-break:normal; 
+		width:auto; 
+		display:block; 
+		white-space:pre-wrap;
+		word-wrap : break-word ;
+		overflow: hidden ;
+	}  
+}

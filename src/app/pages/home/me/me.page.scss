@@ -1,0 +1,63 @@
+.me_content{
+	background-color: #ccc;
+	.collection{
+		padding-left: 13px;
+		padding-right: 13px;
+	}
+	.white-color{
+		background-color: white;
+	}
+	.liner{
+		height:20px;
+		width: 100%;
+	}
+	.line{
+		width: 100%;
+		height: 1px;
+		background-color: #ccc;
+		clear: both;
+	}
+	.item-header{
+		width: 100%;
+		height: 70px;
+		line-height: 70px;
+		vertical-align: center;
+		font-size: 1.5rem;
+		.item-left{
+			display: inline-block;
+			width:50%;
+			height: 100%;
+			float: left;
+			font-size: 2rem;
+		}
+		.item-right{
+			width: 50%;
+			text-align: right;
+			float: left;
+			height: 100%;
+			img{
+				width: 50px;
+				height: 50px;
+				vertical-align: middle;
+			}
+		}
+	}
+	.item{
+		width: 100%;
+		height: 45px;
+		line-height: 45px;
+		vertical-align: center;
+		font-size: 1.5rem;
+		.item-left{
+			display: inline-block;
+			width:50%;
+			overflow: hidden;
+			float: left;
+		}
+		.item-right{
+			display: inline-block;
+			width: 50%;
+			text-align: right;
+		}
+	}
+}

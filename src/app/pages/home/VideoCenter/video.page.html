@@ -1,0 +1,27 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>视频中心</ion-title>
+	</ion-navbar>
+</ion-header>
+<ion-content>
+	<ion-list>
+		<ion-list-header>最新视频</ion-list-header>
+		<ion-item *ngFor="let item of newList" (click)="itemClick(item)">
+			<ion-avatar item-start>
+			<img src="{{item.authorImg}}">
+			</ion-avatar>
+			<h2>{{item.title}}</h2>
+			<p>{{item.author}}</p>
+			<ion-note item-end>{{item.pubdate | date:'shortTime'}}</ion-note>
+		</ion-item>
+		<ion-list-header>最新视频</ion-list-header>
+		<ion-item *ngFor="let item of mpvList">
+			<ion-avatar item-start>
+				<img src="{{item.authorImg}}">
+			</ion-avatar>
+			<h2>{{item.title}}</h2>
+			<p>{{item.author}}</p>
+			<ion-note item-end>{{item.pubdate | date:'shortTime'}}</ion-note>
+		</ion-item>
+	</ion-list>
+</ion-content>

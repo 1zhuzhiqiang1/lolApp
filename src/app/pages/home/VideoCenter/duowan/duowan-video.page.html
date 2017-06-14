@@ -1,0 +1,32 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>视频中心</ion-title>
+	</ion-navbar>
+</ion-header>
+<ion-content>
+	<ion-list no-lines style="margin-bottom: 0px" >
+		<ion-item *ngFor="let item of videos" style="width: 50%;height:130px;float: left" (click)="itemClick(item)" approxItemHeight="125px">
+			<div class="uiVideo__item"> 
+				<a class="uiVideo__ori" title=""> 
+					<!-- <ion-img [src]="item.imgUri" class="uiVideo__img"></ion-img> -->
+					<img src="{{item.imgUri}}" class="uiVideo__img">
+					<span class="uiVideo__time">{{item.videoTime}}</span>
+				</a>
+				<a class="uiVideo__subtitle" title="">{{item.miaoShu}}</a>  
+				<div class="uiVideo__meta">
+					<a class="uiVideo__metaauthor" href="http://video.duowan.com/u/2168000137" title="每日撸报">
+						<i></i>{{item.zuozhe}}
+					</a> 
+					<div class="uiVideo__playtotal">
+						<i></i>{{item.boFangLiang}}
+					</div>
+				</div> 
+			</div>
+		</ion-item>
+	</ion-list>
+	<div style="clear: both;"></div>
+	<!-- 自动加载 -->
+	<ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+		<ion-infinite-scroll-content></ion-infinite-scroll-content>
+	</ion-infinite-scroll>
+</ion-content>

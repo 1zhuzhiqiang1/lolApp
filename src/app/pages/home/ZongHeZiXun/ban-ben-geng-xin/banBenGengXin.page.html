@@ -1,0 +1,18 @@
+<ion-content>
+	<ion-list no-lines style="margin-bottom: 5px;">
+		<ion-item *ngFor="let item of newDatas" (click)="itemSelected(item)">
+			<img src="{{item.img_link}}" class="news-cover" />
+			<h3 class="news-title">
+				<span>{{item.title}}</span>
+				<label class="news-time">{{item.time}}</label>
+			</h3>
+		</ion-item>
+	</ion-list>
+	<!-- 自动加载 -->
+	<ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+		<ion-infinite-scroll-content
+		loadingSpinner="bubbles"
+		loadingText="正在加载数据中...">
+	</ion-infinite-scroll-content>
+</ion-infinite-scroll>
+</ion-content>
