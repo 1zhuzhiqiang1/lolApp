@@ -1,13 +1,19 @@
 <ion-header>
-<ion-navbar>
-  <ion-title>聊天室</ion-title>
-</ion-navbar>
+  <ion-navbar>
+    <ion-title>聊天室</ion-title>
+  </ion-navbar>
 </ion-header>
-<ion-content style="height: 100%">
-	<ion-list class="news-list">
-    <ion-item ngFor="">
-
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of datas">
+      <span>{{item.content.text}}</span>
+      <!--<span>{{item}}</span>-->
     </ion-item>
   </ion-list>
-  <ion-input placeholder="请输入消息"></ion-input>
 </ion-content>
+<ion-footer>
+  <div class="message-bottom">
+    <ion-input class="input" #input placeholder="请输入消息" clearOnEdit="true"></ion-input>
+    <button class="btn-send" (click)="sendMessage()">发送</button>
+  </div>
+</ion-footer>

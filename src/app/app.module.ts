@@ -27,12 +27,14 @@ import {DianJingXinWenPage} from './pages/home/ZongHeZiXun/dian-jing-xin-wen/dia
 import {LuTuBaGuaPage} from './pages/home/ZongHeZiXun/lu-tu-ba-gua/luTuBaGua.page';
 import {ZuiXinGengXinPage} from './pages/home/ZongHeZiXun/zui-xin-geng-xin/zuiXinGengXin.page';
 import {ZiXunDetailPage} from './pages/home/ZongHeZiXun/zixun-detail/zixun-detail.page';
+import {FriendListPage} from "./pages/home/me/friend-list/friend-list.page";
+import {ChatDetailPage} from "./pages/home/me/chat-detail.page.ts/chat-detail.page";
 
 @NgModule({
   declarations: [
     MyApp, HomePage, ActivityPage, MatchPage, MePage, VideoPage, InfoPage,
     BanBenGengXinPage, DianJingXinWenPage, LuTuBaGuaPage, ZuiXinGengXinPage,
-    VideoDetailPage, DuowanVideoPage, ZiXunDetailPage
+    VideoDetailPage, DuowanVideoPage, ZiXunDetailPage,FriendListPage,ChatDetailPage
   ],
   imports: [
     BrowserModule, HttpModule,
@@ -50,7 +52,7 @@ import {ZiXunDetailPage} from './pages/home/ZongHeZiXun/zixun-detail/zixun-detai
   entryComponents: [
     MyApp, HomePage, ActivityPage, MatchPage, MePage, VideoPage, InfoPage,
     BanBenGengXinPage, DianJingXinWenPage, LuTuBaGuaPage, ZuiXinGengXinPage, ZiXunDetailPage,
-    VideoDetailPage, DuowanVideoPage
+    VideoDetailPage, DuowanVideoPage,FriendListPage,ChatDetailPage
   ],
   providers: [
     StatusBar,

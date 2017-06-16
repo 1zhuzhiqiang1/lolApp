@@ -1,4 +1,13 @@
-.news-list {
-  width: 100%;
-  height: 90%;
+.message-bottom {
+  height: 44px;
+  .input {
+    width: 80%;
+    height: 100%;
+    float: left;
+    background-color: pink;
+  }
+  .btn-send {
+    width: 20%;
+    height: 100%;
+  }
 }

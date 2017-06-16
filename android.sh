@@ -10,10 +10,9 @@ cp ./platforms/android/build/outputs/apk/android-release-unsigned.apk ./key
 
 cd key
 
-# if [ -f LOL视界.apk ]; then
-# 	echo "asd"
-# 	rm LOL视界.apk
-# fi
+ if [ -f LOL视界.apk ]; then
+ 	rm LOL视界.apk
+ fi
 
 jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.jks android-release-unsigned.apk zhuzhiqiang
 
